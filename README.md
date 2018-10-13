@@ -1,5 +1,4 @@
 # SB Buddy
-A companion app for StarBreak
 
 ### [Download](https://github.com/Masondeanm/SB-Buddy/releases/latest)
 
