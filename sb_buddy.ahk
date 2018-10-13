@@ -50,7 +50,7 @@ assignKeys:
 	if(not susp)
 		msgBox, It's highly recommended that you assign a key to suspend the script. This will toggle the program on and off if needed. (Do not use "Esc".)
 	if(not chat)
-		msgBox, Entering your "Chat" key is very important. It's used to suspend the program so you can chat without having to suspend the program manually.
+		msgBox, Entering your "Chat" key is very important. It's used to suspend the program so you can chat without having to suspend the program manually. It is also necessary for using the chat hotkeys.
 	for k, v in suspendKeys
 		try hotkey, % v, off
 	for k, v in chatCommands
@@ -417,10 +417,10 @@ launchHelp:
 	gui, font, s10 w600
 	gui, add, text, gchatBreakHelp, ChatBreak
 	gui, add, text, gmovingSwapHelp, Moving Swap
-	gui, add, text, gsuspendHelp, Suspending the Program
+	gui, add, text, gsuspendHelp, Suspending
 	gui, add, text, gprofileHelp, Swap Profiles
 	gui, add, text, gwarpToggleHelp, Warp Toggle
-	gui, show,, Help
+	gui, show, w188, Help
 	return
 chatBreakHelp:
 	gui, new
@@ -431,7 +431,7 @@ chatBreakHelp:
 movingSwapHelp:
 	gui, new
 	gui, font, s10
-	gui, add, text, w300, If you check Moving Swap in the Hotkeys section, your character will be able to swap items without interupting your movement and attacking. It is not perfect however. Due to how the game handels opening your inventory while the "Jump" button is pressed down, if you swap while having your jump button down, you will perfom a full height jump.
+	gui, add, text, w300, If you check Moving Swap in the Hotkeys section, your character will be able to swap items without interrupting your movement and attacking. It is not perfect however. Due to how the game handels opening your inventory while the "Jump" button is pressed down, if you swap while having your jump button down, you will perform a full height jump.
 	gui, show,, Moving Swap
 	return
 suspendHelp:
@@ -439,10 +439,10 @@ suspendHelp:
 	gui, font, s10
 	gui, add, text, w300,
 		(lTrim join`n`n
-		Suspending SB Buddy will disable all of its features. This is useful if you ever want to use keys that SB Buddy uses for somethings else. The suspend key (that you can set up in the Hotkeys section) will toggle the suspension of the Program on and off.
-		Your "Chat" key will automatically suspend SB Buddy, allowing you to type whatever you want without haveing to use your suspend key to toggle SB Buddy off when you type. Hitting "Chat" again to send the message will resume SB Buddy.
+		Suspending SB Buddy will disable all of its features. This is useful if you ever want to use keys that SB Buddy uses, for somethings else. The suspend key (that you can set up in the Hotkeys section) will toggle the suspension of the SB Buddy on and off.
+		Your "Chat" key will automatically suspend SB Buddy, allowing you to type whatever you want without having to use your suspend key to toggle SB Buddy off when you type. Hitting "Chat" again to send the message will resume SB Buddy.
 		Esc and the Left Mouse Button automatically unsuspend SB Buddy. This way if you quit out of chat mode without sending a message, SB buddy will still go back to being active.
-		All features that involve the game's chat mode intellegently toggle the suspesion so that you should never have to do it manually while using those features.
+		All features that involve the game's chat mode intelligently toggle the suspension so that you should never have to do it manually while using them.
 		)
 	gui, show,, ChatBreak
 	return
@@ -451,9 +451,10 @@ profileHelp:
 	gui, font, s10
 	gui, add, text, w300,
 		(lTrim join`n`n
-		SB buddy uses what are called Swap Profiles. Each profile lets you set up a different way your swap keys will work. (This is only needed if you're going to use different cycles for different shells.) You can make up to 5 profiles (one for each shell) and you'll be able to switch between them by using "Shift" plus "1", "2", "3", "4", or "5".
+		SB Buddy uses what are called Swap Profiles. Each profile lets you set up a different way your swap keys will work. (This is only needed if you're going to use different cycles for different shells.) You can make up to 5 profiles (one for each shell) and you'll be able to switch between them by using "Shift" plus "1", "2", "3", "4", or "5".
 		Click (or hit Enter/Space) over one of the blank spots in the Swap Profiles section to assign a key that will swap that spot.
-		The checkboxes to the right of each inventory spot are for setting up cycles. If you check that box, the key to the left and the key to the right (wrapped down to the next row if you're at the end) will be in a cycle together. This means that those keys will cycle forwards and backwards between the items in those two spots, and the one you have currently equiped.
+		The checkboxes to the right of each inventory spot are for setting up cycles. If you check that box, the key to the left and the key to the right (wrapped down to the next row if you're at the end) will be in a cycle together. This means that those keys will cycle forwards and backwards between the items in those two spots, and the one you have currently equipped.
+		Your Profiles are saved whenever you switch tabs or close the window.
 		)
 	gui, show,, Swap Profiles
 	return
@@ -463,7 +464,7 @@ warpToggleHelp:
 	gui, add, text, w300,
 		(lTrim join`n`n
 		Warp Toggle lets you take off and put on your warp with the press of a button. In order for it to work, the first blank inventory spot in the swap profile you're currently using must be the first empty inventory spot in your inventory. If your Swap Profile is blank, this is the first spot in your inventory.
-		Even though this is called Warp Toggle (because the only usefull time to take off a characters item would be for hyperleeching/attacking) it will have the same effect, regardless of what shell you're using.
+		Even though this is called Warp Toggle (because the only useful time to take off a shell's item would be for hyperleeching/attacking) it will have the same effect, regardless of what shell you're using.
 		(You must have an implant slot for this to work.)
 		)
 	gui, show,, Warp Toggle
