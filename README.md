@@ -1,7 +1,7 @@
 # SB Buddy
 A companion app for StarBreak
 
-### Download
+### [Download][https://github.com/Masondeanm/SB-Buddy/releases/tag/v1]
 
 ### Usage
 - On first use, "SB Buddy.exe" will create a folder called "SB Buddy" and move itself there (unless it is already in a folder of that name). Once there it will drop the necessary files.
