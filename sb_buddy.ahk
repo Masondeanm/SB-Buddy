@@ -3,6 +3,7 @@
 #include <contain>
 #singleInstance, force
 #UseHook
+#maxHotkeysPerInterval, 1000
 sendMode, input
 
 contain("SB Buddy")
