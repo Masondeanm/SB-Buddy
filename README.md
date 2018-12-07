@@ -1,6 +1,6 @@
 # SB Buddy
 
-### [Download](https://github.com/Masondeanm/SB-Buddy/releases/latest)
+### [Download](https://github.com/Ursi/SB-Buddy/releases/latest)
 
 ### Usage
 - On first use, "SB Buddy.exe" will create a folder called "SB Buddy" and move itself there (unless it is already in a folder of that name). Once there it will drop the necessary files.
