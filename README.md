@@ -1,5 +1,8 @@
 # SB Buddy
 
+### Warning
+There's currently an issue with the ChatBreak feature for all users that use `esc` as the key to launch their menu. It is recommended to not use this feature.
+
 ### [Download](https://github.com/Ursi/SB-Buddy/releases/latest)
 
 ### Usage
