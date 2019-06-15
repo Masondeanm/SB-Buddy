@@ -12,7 +12,7 @@ There's currently an issue with the ChatBreak feature for all users that use `es
 ### Features
 - **Item Swap:** Allows you to assign a single key to swap out an item in your inventory, or two keys to cycle forwards and backwards through three items.
 - **Chat Hotkeys:** Allows you to assign keys for automatically starting a faction chat, reply, or general chat command.
-- **ChatBreak:** Pressing three of your movement/attack keys at the same time while typing will break you out typing mode and give you control of your character again.
+- ~~**ChatBreak:** Pressing three of your movement/attack keys at the same time while typing will break you out typing mode and give you control of your character again.~~
 - **Warp Toggle:** Allows you to set a hotkey that quickly takes your warp on and off, for hyperleeching/attacking.
 
 #### AutoHotkey Info
